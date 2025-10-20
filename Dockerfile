@@ -18,7 +18,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 # Copy requirements file and install Python dependencies
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt \
-&&& pip install --no-cache-dir gunicorn
+&& pip install --no-cache-dir gunicorn
 
 
 RUN apt-get update && \
